@@ -1,0 +1,4 @@
+# Using lambda with map to square each number in a list
+numbers = [0, 5, 3, 4]
+squared_numbers = list(map(lambda x: x ** 2, numbers))
+print(squared_numbers)

@@ -1,0 +1,16 @@
+
+# Using lambda with sorted to sort tuples by the first or second element and even reverse
+pairs = [(1, 20, 0.3, 15), (3, 10, 0.4, 12), (5, 0, 0.2, 13),
+         (4, 30, 0.1, 16), (2, 40, 0.6, 10), (3, 50, 0.5, 14)]
+
+fruits = [(1, 'apple'), (3, 'banana'), (2, 'cherry'),
+          (4, 'dragon fruit'), (1, 'jack fruit'), (5, 'kiwis')]
+
+sorted_pairs = sorted(pairs, key=lambda x: x[2])
+sorted_pairs1 = sorted(pairs, key=lambda x: x[2], reverse=True)
+
+sorted_fruits = sorted(fruits, key=lambda x: x[1])
+
+print("Ascending order:", sorted_pairs)
+print("Descending order:", sorted_pairs1)
+print("Sorted fruits:", sorted_fruits)
